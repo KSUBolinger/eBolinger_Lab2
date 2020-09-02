@@ -6,17 +6,21 @@ namespace eBolinger_Lab2
 {
     public class Manager
     {
-        private List<Helper> active;
-
         public Helper requestHelp()
         {
             Helper h = new Helper(this);
+            active.Add(h);
+            Console.WriteLine("New Helper Added");
             return h;
         }
+
+        private List<Helper> active = new List<Helper>();
 
         public Helper Remove(Helper h)
         {
             active.Remove(h);
+            Console.WriteLine("Helper Removed");
+
             return h;
         }
     }

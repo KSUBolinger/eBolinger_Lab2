@@ -1,4 +1,5 @@
 ﻿using System;
+using eBolinger_Lab2;
 
 namespace eBolinger_Lab2
 {
@@ -6,9 +7,17 @@ namespace eBolinger_Lab2
     {
         public static void Main(string[] args)
         {
+            work();
+            
+            //Console.WriteLine("Hello World!");
+        }
+
+        public static void work()
+        {
             Manager mrg = new Manager();
             Helper h = mrg.requestHelp();
-            //Console.WriteLine("Hello World!");
+            h.doWork();
+            h.finished();
         }
     }
 }
