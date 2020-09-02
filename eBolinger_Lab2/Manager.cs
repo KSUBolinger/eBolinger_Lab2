@@ -7,7 +7,7 @@ namespace eBolinger_Lab2
     public class Manager
     {
         public Helper requestHelp()
-        {
+        { 
             Helper h = new Helper(this);
             active.Add(h);
             Console.WriteLine("New Helper Added");
@@ -19,7 +19,7 @@ namespace eBolinger_Lab2
         public Helper Remove(Helper h)
         {
             active.Remove(h);
-            Console.WriteLine("Helper Removed");
+            //Console.WriteLine("Helper Removed");
 
             return h;
         }
