@@ -9,5 +9,9 @@ namespace eBolinger_Lab2
             
             Console.WriteLine("Hello World!");
         }
+
+        Manager mrg = new Manager();
+
+        Helper h = mrg.
     }
 }
