@@ -6,12 +6,21 @@ namespace eBolinger_Lab2
 {
     public class Helper
     {
-
-        public Manager mrg { get; set; }
+        public Manager myManager;
 
         public Helper(Manager mrg)
         {
             
+        }
+
+        public void doWork()
+        {
+
+        }
+
+        public void finished()
+        {
+
         }
     }
 }

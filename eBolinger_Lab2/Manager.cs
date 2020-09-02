@@ -7,14 +7,16 @@ namespace eBolinger_Lab2
     public class Manager
     {
         private List<Helper> active;
-        public Manager()
-        {
-           
-        }
 
-        public static Helper RequestHelp()
+        public Helper requestHelp()
         {
             Helper h = new Helper(this);
+            return h;
+        }
+
+        public Helper Remove(Helper h)
+        {
+            active.Remove(h);
             return h;
         }
     }
