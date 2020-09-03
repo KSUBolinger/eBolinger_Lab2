@@ -21,7 +21,14 @@ namespace eBolinger_Lab2Part2
         public void finished()
         {
             Console.WriteLine("Worked Finished");
-            myManager.Remove(this);
+            Done job = RemoveMethod;
+        }
+
+        private delegate void Done(Helper h);
+
+        public void RemoveMethod(Helper h)
+        {
+            myManager.Remove(h);
         }
     }
 }
